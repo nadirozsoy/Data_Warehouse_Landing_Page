@@ -50,10 +50,10 @@
             }
             @include small-screen{
                 position: relative;
-                left: -115px;
-                width: 180px;
-                height: 40px;
-                top: 220px;
+                left: -25px;
+                width: 210px;
+                height: 50px;
+                top: 160px;
             }
         }
         &__logo{
@@ -65,7 +65,7 @@
             @include small-screen{
                 position: relative;
                 left: -40px;
-                top: -140px;
+                top: -150px;
             }
         }
         &__ul{

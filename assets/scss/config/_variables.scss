@@ -1,0 +1,14 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,800&display=swap");
+
+$gray:#4B5D68;
+$blue:#212353;
+$purple:#9C69E2;
+$pink:#F063B8;
+$lightgreen:#68C9BA;
+
+@mixin small-screen {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }  
