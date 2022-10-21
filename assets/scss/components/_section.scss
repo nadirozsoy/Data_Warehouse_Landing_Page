@@ -1,3 +1,41 @@
+.btn2{
+    width: 170px;
+    height: 60px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: $purple;
+    color: white;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1) ;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+        transition: 0.4s ease;
+        background-color: white;
+        color: $purple;
+    }
+    &:active{
+        transform: scale(.94);
+    }
+}
+.gc{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.child2{
+    font-weight: bold;
+    position: relative;
+    top: 12px;
+}
+.hover{
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.3) ;
+    border-radius: 50px;
+}
+.active{
+    transform: scale(.94);
+}
 .section{
     -webkit-tap-highlight-color: transparent;
     display: flex;
@@ -17,7 +55,7 @@
         justify-content: center;
         position: relative;
         height: 100px;
-        left: 400px;
+        left: 840px;
         @include small-screen{
             position: relative;
             left: 400px;
@@ -57,35 +95,18 @@
             }
         }
         &__btn{
-            width: 170px;
-            height: 60px;
+            @extend .btn2;
             position: relative;
             top: 444px;
             left: -285px;
-            border-radius: 50px;
-            font-weight: bold;
-            background-color: $purple;
-            color: white;
-            border: none;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1) ;
-            cursor: pointer;
-            text-align: center;
             @include small-screen{
-                width: 135px;
-                position: relative;
-                left: 110px;
-                top: 480px;
-                z-index: 2;
-                height: 55px;
-                font-size: 20px;
-            }
-            &:hover{
-                transition: 0.4s ease;
-                background-color: white;
-                color: $purple;
-            }
-            &:active{
-                transform: scale(.94);
+            width: 135px;
+            position: relative;
+            left: 110px;
+            top: 480px;
+            z-index: 2;
+            height: 55px;
+            font-size: 20px;
             }
         }
         &__img{
@@ -116,7 +137,7 @@
         top: 1000px;
         border-radius: 50px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1) ;
-        left: -945px;
+        left: -505px;
         background: rgba(240, 99, 184, 0.15);
         @include small-screen{
             margin-top: 200px;
@@ -207,6 +228,9 @@
             padding: 5px 10px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1) ;
         }
+        &:active{
+            transform: scale(.94);
+        }
     }
     &__div3{
         position: relative;
@@ -238,7 +262,7 @@
             display: flex;
             justify-content: space-between;
             position: relative;
-            left: 50px;
+            left: 520px;
             &__box1{
                 margin-right: 300px;
                 @extend .box;
@@ -418,6 +442,347 @@
                             left: 50px;
                         }
                     }
+                }
+            }
+            &__box3{
+                position: relative;
+                transform: translateY(450px);                
+                left: -1050px;
+                
+                @extend .box;
+                @include small-screen{
+                    position: relative;
+                    transform: translateY(300px);
+                    left: -110px;
+                }
+                &__img{
+                    position: relative;
+                    left: -210px;
+                    top: 20px;
+                    z-index: 2;
+                    transition: transform .4s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    @include small-screen{
+                        position: relative;
+                        left: -300px;
+                        width: 120px;
+                        top: 40px;
+                    }
+                }
+                &__child{
+                    @extend .child;
+                    border-bottom: 358px solid rgba(240, 99, 184,0.15);
+                    position: relative;
+                    left: -110px;
+                    top: -270px;
+                    @include small-screen{
+                        position: relative;
+                        width: 322px;
+                        left: -40px;
+                        top: -190px;
+                        border-left: 40px solid transparent;
+                        border-right: 0px solid transparent;
+                    }
+                    &__grandchild1{
+                        font-size: 24px;
+                        position: relative;
+                        top: 45px;
+                        left: 100px;
+                        @include small-screen{
+                            position: relative;
+                            left: 90px;
+                            top: 40px;
+                        }
+                    }
+                    &__grandchild2{
+                        position: relative;
+                        top: 75px;
+                        left: 100px;
+                        width: 200px;
+                        line-height: 28px;
+                        @include small-screen{
+                            position: relative;
+                            left: 90px;
+                            top: 40px;
+                            width: 180px;
+                        }
+                    }
+                    &__grandchild3{
+                        position: relative;
+                        top: 90px;
+                        left: 90px;
+                        @extend .learn-more;
+                        @include small-screen{
+                            position: relative;
+                            top: 50px;
+                            left: 80px;
+                        }
+                    }
+                    &__grandchild4{
+                        position: relative;
+                        top: -130px;
+                        left: 114px;
+                        opacity: 0.3;
+                        @include small-screen{
+                            position: relative;
+                            top: -260px;
+                            left: 50px;
+                        }
+                    }
+                }
+            }
+            &__box4{
+                position: relative;
+                left: -885px;
+                transform: translateY(430px);
+                @extend .box;
+                @include small-screen{
+                    position: relative;
+                    transform: translateY(300px);
+                    left: -110px;
+                }
+                &__img{
+                    position: relative;
+                    left: -230px;
+                    top: 30px;
+                    z-index: 2;
+                    transition: transform .4s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    @include small-screen{
+                        position: relative;
+                        left: -300px;
+                        width: 120px;
+                        top: 40px;
+                    }
+                }
+                &__child{
+                    @extend .child;
+                    border-bottom: 358px solid rgba(33, 35, 83,0.15);
+                    position: relative;
+                    left: -110px;
+                    top: -270px;
+                    @include small-screen{
+                        position: relative;
+                        width: 322px;
+                        left: -40px;
+                        top: -190px;
+                        border-left: 40px solid transparent;
+                        border-right: 0px solid transparent;
+                    }
+                    &__grandchild1{
+                        font-size: 24px;
+                        position: relative;
+                        top: 45px;
+                        left: 70px;
+                        @include small-screen{
+                            position: relative;
+                            left: 90px;
+                            top: 40px;
+                        }
+                    }
+                    &__grandchild2{
+                        position: relative;
+                        top: 55px;
+                        left: 70px;
+                        width: 200px;
+                        line-height: 25px;
+                        @include small-screen{
+                            position: relative;
+                            left: 90px;
+                            top: 40px;
+                            width: 180px;
+                        }
+                    }
+                    &__grandchild3{
+                        position: relative;
+                        top: 60px;
+                        left: 60px;
+                        @extend .learn-more;
+                        @include small-screen{
+                            position: relative;
+                            top: 50px;
+                            left: 80px;
+                        }
+                    }
+                    &__grandchild4{
+                        position: relative;
+                        top: -250px;
+                        left: 44px;
+                        opacity: 0.2;
+                        @include small-screen{
+                            position: relative;
+                            top: -260px;
+                            left: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    position: relative;
+    top: 3000px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.3) ;
+    background: linear-gradient(rgba(104, 201, 186,0.2),rgba(240, 99, 184,0.5));
+    &__img{
+        position: relative;
+        left: 1350px;
+        top: -50px;
+        &:hover{
+            @extend .hover;
+        }
+        &:active{
+            @extend .active;
+        }
+    }
+    &__section{
+        display: flex;
+        justify-content: space-evenly;
+        &__div1{
+            &__child{
+                &__grandchild1{
+                    cursor: pointer;
+                    transition: transform .4s ease;
+                    &:hover{
+                    transform: scale(1.1);
+                    }
+                }
+                &__grandchild2{
+                    display: inline;
+                    font-weight: bold;
+                    font-size: 20px;
+                    position: relative;
+                    top: -10px;
+                    left: 15px;
+                }
+            }
+            &__child2{
+                margin-top: 50px;
+                &__p{
+                    line-height: 28.8px;
+                    width: 260px;
+                    font-weight: bold;
+                    opacity: 0.7;
+                    margin-bottom: 20px;
+                }
+                &__p2{
+                    line-height: 28.8px;
+                    width: 180px;
+                    margin-bottom: 200px;
+                }
+                &__p3{
+                    width: 350px;
+                }
+            }
+        }
+        &__div2{
+            &__child{
+                @extend .child2;
+                &__grandchild1{
+                    @extend .gc;
+                    margin-top: 65px;
+                }
+                &__grandchild2{
+                    @extend .gc;
+                }
+                &__grandchild3{
+                    @extend .gc;
+                }
+                &__grandchild4{
+                    @extend .gc;
+                }
+            }
+        }
+        &__div3{
+            &__child{
+                @extend .child2;
+                &__grandchild1{
+                    @extend .gc;
+                    margin-top: 65px;
+                }
+                &__grandchild2{
+                    @extend .gc;
+                }
+                &__grandchild3{
+                    @extend .gc;
+                }
+                &__grandchild4{
+                    @extend .gc;
+                }
+                &__grandchild5{
+                    @extend .gc;
+                }
+            }
+        }
+        &__div4{
+            &__child{
+                @extend .child2;
+                &__gc{
+                    font-weight: bold;
+                    margin-bottom: 65px;
+                }
+                &__gc2{
+                    &:hover{
+                        @extend .hover;
+                    }
+                    &:active{
+                        @extend .active;
+                    }
+                }
+                &__gc3{
+                    &:hover{
+                        @extend .hover;
+                    }
+                    &:active{
+                        @extend .active;
+                    }
+                }
+                &__gc4{
+                    &:hover{
+                        @extend .hover;
+                    }
+                    &:active{
+                        @extend .active;
+                    }
+                }
+            }
+        }
+    }
+    &__nav{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+        &__div1{
+            margin-right: 260px;
+            &__h1{
+                font-size: 40px;
+            }
+            &__p{
+                font-weight: 500;
+                opacity: 0.8;
+            }
+        }
+        &__div2{
+            &__more{
+                @extend .btn2;
+                position: relative;
+                top: 10px;
+            }
+            &__demo{
+                @extend .btn;
+                margin-left: 40px;
+                position: relative;
+                top: 12px;
+                &__logo{
+                    position: relative;
+                    top: 2px;
                 }
             }
         }
