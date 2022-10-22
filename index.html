@@ -14,15 +14,38 @@
 <body>
     <header class="head">
         <nav class="head__nav"><img class="head__nav__logo" src="./assets/svg/logo.svg">
-            <ul class="head__nav__ul">
-                <li class="head__nav__ul__li"><a href="#">About</a></li>
-                <li class="head__nav__ul__li"><a href="#">Help</a></li>
-                <li class="head__nav__ul__li"><a href="#features">Features</a></li>
-                <li class="head__nav__ul__li"><a href="#">Signup</a></li>
-            </ul>
+            <div class="head__nav__swiper">
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide menu">
+                            <ul class="head__nav__swiper__ul">
+                                <li class="head__nav__swiper__ul__li"><a href="#about">About</a></li>
+                                <li class="head__nav__swiper__ul__li"><a href="#">Help</a></li>
+                                <li class="head__nav__swiper__ul__li"><a href="#features">Features</a></li>
+                                <li class="head__nav__swiper__ul__li"><a href="#">Signup</a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide content">
+                            <div class="menu-button">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head__nav__desktop">
+                <ul class="head__nav__ul">
+                    <li class="head__nav__ul__li"><a href="#about">About</a></li>
+                    <li class="head__nav__ul__li"><a href="#">Help</a></li>
+                    <li class="head__nav__ul__li"><a href="#features">Features</a></li>
+                    <li class="head__nav__ul__li"><a href="#">Signup</a></li>
+                </ul>
+            </div>
             <button class="head__nav__btn"><img class="head__nav__btn__logo" src="./assets/svg/btn_name.svg"
                     alt="logo"></button>
-            <img class="head__nav__menu" src="./assets/svg/icons8-menu.svg">
+            <!-- <img class="head__nav__menu" src="./assets/svg/icons8-menu.svg"> -->
         </nav>
     </header>
     <section class="section">
@@ -106,20 +129,22 @@
             </div>
         </div>
     </section>
-    <article class="article">
-        <h1 class="article__h1">Testimonials</h1>
-        <div class="article__swiper">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1"><img src="./assets/svg/comment1.svg" alt=""></div>
-                    <div class="swiper-slide slide2"><img src="./assets/svg/comment2.svg" alt=""></div>
-                    <div class="swiper-slide slide3"><img src="./assets/svg/comment3.svg" alt=""></div>
+    <div class="testimonials">
+        <article class="article">
+            <h1 class="article__h1">Testimonials</h1>
+            <div class="article__swiper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1"><img src="./assets/svg/comment1.svg" alt=""></div>
+                        <div class="swiper-slide slide2"><img src="./assets/svg/comment2.svg" alt=""></div>
+                        <div class="swiper-slide slide3"><img src="./assets/svg/comment3.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-        </div>
-    </article>
-    <footer class="footer">
+        </article>
+    </div>
+    <footer class="footer" id="about">
         <nav class="footer__nav">
             <div class="footer__nav__div1">
                 <h1 class="footer__nav__div1__h1">Try for free!</h1>

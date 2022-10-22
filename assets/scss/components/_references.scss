@@ -1,0 +1,60 @@
+.btn2{
+    width: 170px;
+    height: 60px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: $purple;
+    color: white;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1) ;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+        transition: 0.4s ease;
+        background-color: white;
+        color: $purple;
+    }
+    &:active{
+        transform: scale(.94);
+    }
+}
+.gc{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.child2{
+    font-weight: bold;
+    position: relative;
+    top: 12px;
+}
+.hover{
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.3) ;
+    border-radius: 50px;
+}
+.active{
+    transform: scale(.94);
+}
+.btn{
+    width: 210px;
+    height: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1) ;
+    margin-top: 15px;
+    &:hover{
+        transition: 0.4s ease;
+        background-color: $pink;
+    }
+    &:active{
+        transform: scale(.94);
+    }
+}
+.logo{
+    cursor: pointer;
+    transition: transform .4s ease;
+}

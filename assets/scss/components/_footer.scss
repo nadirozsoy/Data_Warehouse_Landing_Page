@@ -1,0 +1,164 @@
+.footer{
+    position: relative;
+    top: 3000px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.3) ;
+    background: linear-gradient(rgba(104, 201, 186,0.2),rgba(240, 99, 184,0.5));
+    &__img{
+        position: relative;
+        left: 1350px;
+        top: -50px;
+        &:hover{
+            @extend .hover;
+        }
+        &:active{
+            @extend .active;
+        }
+    }
+    &__section{
+        display: flex;
+        justify-content: space-evenly;
+        &__div1{
+            &__child{
+                &__grandchild1{
+                    cursor: pointer;
+                    transition: transform .4s ease;
+                    &:hover{
+                    transform: scale(1.1);
+                    }
+                }
+                &__grandchild2{
+                    display: inline;
+                    font-weight: bold;
+                    font-size: 20px;
+                    position: relative;
+                    top: -10px;
+                    left: 15px;
+                }
+            }
+            &__child2{
+                margin-top: 50px;
+                &__p{
+                    line-height: 28.8px;
+                    width: 260px;
+                    font-weight: bold;
+                    opacity: 0.7;
+                    margin-bottom: 20px;
+                }
+                &__p2{
+                    line-height: 28.8px;
+                    width: 180px;
+                    margin-bottom: 200px;
+                }
+                &__p3{
+                    width: 350px;
+                }
+            }
+        }
+        &__div2{
+            &__child{
+                @extend .child2;
+                &__grandchild1{
+                    @extend .gc;
+                    margin-top: 65px;
+                }
+                &__grandchild2{
+                    @extend .gc;
+                }
+                &__grandchild3{
+                    @extend .gc;
+                }
+                &__grandchild4{
+                    @extend .gc;
+                }
+            }
+        }
+        &__div3{
+            &__child{
+                @extend .child2;
+                &__grandchild1{
+                    @extend .gc;
+                    margin-top: 65px;
+                }
+                &__grandchild2{
+                    @extend .gc;
+                }
+                &__grandchild3{
+                    @extend .gc;
+                }
+                &__grandchild4{
+                    @extend .gc;
+                }
+                &__grandchild5{
+                    @extend .gc;
+                }
+            }
+        }
+        &__div4{
+            &__child{
+                @extend .child2;
+                &__gc{
+                    font-weight: bold;
+                    margin-bottom: 65px;
+                }
+                &__gc2{
+                    &:hover{
+                        @extend .hover;
+                    }
+                    &:active{
+                        @extend .active;
+                    }
+                }
+                &__gc3{
+                    &:hover{
+                        @extend .hover;
+                    }
+                    &:active{
+                        @extend .active;
+                    }
+                }
+                &__gc4{
+                    &:hover{
+                        @extend .hover;
+                    }
+                    &:active{
+                        @extend .active;
+                    }
+                }
+            }
+        }
+    }
+    &__nav{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+        &__div1{
+            margin-right: 260px;
+            &__h1{
+                font-size: 40px;
+            }
+            &__p{
+                font-weight: 500;
+                opacity: 0.8;
+            }
+        }
+        &__div2{
+            &__more{
+                @extend .btn2;
+                position: relative;
+                top: 10px;
+            }
+            &__demo{
+                @extend .btn;
+                margin-left: 40px;
+                position: relative;
+                top: 12px;
+                &__logo{
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+    }
+}
