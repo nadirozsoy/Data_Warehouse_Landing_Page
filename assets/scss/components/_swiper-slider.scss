@@ -1,9 +1,10 @@
 .testimonials{
+    -webkit-tap-highlight-color: transparent;
     display: flex;
     justify-content: center;
     text-align: center;
     @include small-screen{
-      margin-top: 700px;
+      margin-top: 900px;
     }
 }
 .article{
@@ -22,6 +23,10 @@
         top: 100px;
         left: 420px;
         font-size: 40px;
+        @include small-screen{
+          position: relative;
+          left: 750px;
+        }
     }
     &__swiper{
         position: relative;
@@ -33,6 +38,10 @@
     border-radius: 10px;
     width: 1500px;
     height: 400px;
+    @include small-screen{
+      position: relative;
+      left: 130px;
+    }
   }
 
 .swiper-slide {
@@ -54,8 +63,11 @@
     &:hover{
         transform: scale(1.1);
     }
+    @include small-screen{
+      // width: 300px;
+      // height: 300px;
+    }
 }
-
   .slide{
     width: 400px;
     height: 330px;
@@ -63,12 +75,31 @@
   .slide1{
     @extend .slide;
     width: 645px;
+    @include small-screen{
+      position: relative;
+      top: 75px;
+      width: 320px;
+      height: 160px;
+    }
   }
   .slide2{
     @extend .slide;
+    @include small-screen{
+      position: relative;
+      top: 35px;
+      width: 320px;
+      height: 200px;
+    }
   }
   .slide3{
-    @extend .slide;
+    width: 200px;
+    height: 330px;
+    @include small-screen{
+      position: relative;
+      top: -5px;
+      width: 200px;
+      height: 280px;
+    }
   }
 
   //------------------------------------
@@ -89,7 +120,7 @@
     position: relative;
     left: 20px;
     height: 400px;
-    background-color: $purple;
+    background: rgba(156, 105, 226, 0.55);
     color: #fff;
   }
 
@@ -99,14 +130,14 @@
 
   .menu-button {
     position: absolute;
-    top: 0px;
+    top: -30px;
     border-radius: 10px;
     left: 50px;
     padding: 15px;
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    background-color: $pink;
+    background: rgba(240, 99, 184, 0.45);
   }
 
   .menu-button .bar:nth-of-type(1) {

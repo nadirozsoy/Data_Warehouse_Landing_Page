@@ -1,8 +1,12 @@
 .footer{
+    -webkit-tap-highlight-color: transparent;
     position: relative;
     top: 3000px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.3) ;
     background: linear-gradient(rgba(104, 201, 186,0.2),rgba(240, 99, 184,0.5));
+    @include small-screen{
+        padding-bottom: 850px;
+    }
     &__img{
         position: relative;
         left: 1350px;
@@ -13,12 +17,30 @@
         &:active{
             @extend .active;
         }
+        @include small-screen{
+            position: relative;
+            left: 285px;
+            top: -635px;
+        }
     }
     &__section{
         display: flex;
         justify-content: space-evenly;
+        @include small-screen{
+            flex-wrap: wrap;
+        }
         &__div1{
+            @include small-screen{
+                text-align: center;
+                justify-content: center;
+                position: relative;           
+                left: 50px;
+            }
             &__child{
+                @include small-screen{
+                    position: relative;           
+                    left: -95px;
+                }
                 &__grandchild1{
                     cursor: pointer;
                     transition: transform .4s ease;
@@ -48,13 +70,31 @@
                     line-height: 28.8px;
                     width: 180px;
                     margin-bottom: 200px;
+                    @include small-screen{
+                        position: relative;           
+                        margin-top: 20px;
+                        left: 40px;
+                    }
                 }
                 &__p3{
                     width: 350px;
+                    @include small-screen{
+                        position: relative;           
+                        margin-top: -120px;
+                        left: -45px;
+                    }
                 }
             }
         }
         &__div2{
+            @include small-screen{
+                text-align: center;
+                justify-content: center;
+                position: relative;           
+                left: 140px;
+                margin-top: 30px;
+                font-size: 20px;
+            }
             &__child{
                 @extend .child2;
                 &__grandchild1{
@@ -73,6 +113,14 @@
             }
         }
         &__div3{
+            @include small-screen{
+                text-align: center;
+                justify-content: center;
+                position: relative;           
+                left: 40px;
+                top: 350px;
+                font-size: 20px;
+            }
             &__child{
                 @extend .child2;
                 &__grandchild1{
@@ -94,6 +142,14 @@
             }
         }
         &__div4{
+            @include small-screen{
+                text-align: center;
+                justify-content: center;
+                position: relative;           
+                left: -90px;
+                top: 750px;
+                font-size: 20px;
+            }
             &__child{
                 @extend .child2;
                 &__gc{
@@ -133,14 +189,27 @@
         flex-direction: row;
         justify-content: space-evenly;
         margin-bottom: 200px;
+        @include small-screen{
+            flex-wrap: wrap;
+            position: relative;
+            left: 170px;
+        }
         &__div1{
-            margin-right: 260px;
+            margin-right: 260px; 
             &__h1{
                 font-size: 40px;
+                @include small-screen{
+                    width: 300px;
+                }
             }
             &__p{
                 font-weight: 500;
                 opacity: 0.8;
+                @include small-screen{
+                    margin-top: 30px;
+                    position: relative;
+                    left: -30px;
+                }
             }
         }
         &__div2{
@@ -148,12 +217,22 @@
                 @extend .btn2;
                 position: relative;
                 top: 10px;
+                @include small-screen{
+                    margin-top: 30px;
+                    position: relative;
+                    left: -60px;
+                }
             }
             &__demo{
                 @extend .btn;
                 margin-left: 40px;
                 position: relative;
                 top: 12px;
+                @include small-screen{
+                    margin-top: 30px;
+                    position: relative;
+                    left: -120px;
+                }
                 &__logo{
                     position: relative;
                     top: 2px;
